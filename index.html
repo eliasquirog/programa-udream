@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel historietas</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+     <header>
+        <h1>{{mensaje}}</h1>
+        <img src="./imagenes/dfb38a6685fe7117266592653d73c0b5.jpg" alt="imagen de logo" class="imagLogo">
+     </header>
+     <main>
+        <h2>Descubre los mejores cómics originales de Marvel. Colecciones completas y revistas de los grandes superhéroes: Spiderman, Patrulla-X, Vengadores, etc. Y no solo eso, sino
+            que tambien puedes ver sus biografias con sus exelentes historias ¡leelos aqui!</h2>
+            <div id="marvel-row">
+                <!-- codigo inyectado desde JS para agregar al carrito-->
+            </div>
+            <div id="carritoConteiner">
+                <!-- codigo inyectado desde JS para agregar al carrito-->
+            </div>
+        <hr>
+        <h3 class="SubT">puede dejar su opinion acerca de las historietas</h3>
+        <p style="white-space: pre-line;">{{ message }}</p>
+        <br>
+        <textarea v-model="message" placeholder="agregue su opinion" class="texT"></textarea>
+        
+     </main>
+    </div>
+     <script src="main.js"></script>
+</body>
+</html>
